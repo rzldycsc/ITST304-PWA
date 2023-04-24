@@ -1,23 +1,54 @@
-body {
-  font-family: sans-serif;
+.game-area {
+	width: 500px;
+	height: 600px;
+	border: 1px solid black;
+	position: relative;
+	margin: 0 auto;
 }
 
-/* Make content area fill the entire browser window */
-html,
-.fullscreen {
-  display: flex;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+.target-area {
+	width: 150px;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	border: 1px solid black;
 }
 
-/* Center the content in the browser window */
-.container {
-  margin: auto;
-  text-align: center;
+.red {
+	left: 0;
+	background-color: red;
 }
 
-.title {
-  font-size: 3rem;
+.green {
+	left: 175px;
+	background-color: green;
+}
+
+.blue {
+	left: 350px;
+	background-color: blue;
+}
+
+.player {
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	position: absolute;
+	bottom: 50px;
+	left: 225px;
+}
+
+.shape {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	position: absolute;
+	top: 0;
+}
+
+.score {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	font-size: 24px;
 }
